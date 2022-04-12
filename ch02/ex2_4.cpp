@@ -10,6 +10,11 @@ int main()
     std::cout << i - i2 << std::endl;   // -32
     std::cout << i - u << std::endl;    // 0
     std::cout << u - i << std::endl;    // 0
+    // const reference
+    const int &r1 = 2;
+    double dval = 3.14;
+    const int &ri = dval;
+    int &r2 = dval;
 
     return 0;
 }

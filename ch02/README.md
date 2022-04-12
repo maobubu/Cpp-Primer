@@ -198,8 +198,8 @@ int main()
 `global_int` is global variable, so the value is zero.
 `local_int` is a local variable which is uninitialized, so it has a undefined value.
 `local_str` is also a local variable which is uninitialized, but it has a value that is defined by the class. So it is empty string.
-:warning:**PS: please read P44 in the English version, P40 in Chinese version to get more.
-The note: Uninitialized objects of built-in type defined inside a function body have a undefined value. *Objects of class type that we do not explicitly inititalize have a value that is defined by class.* **:warning:
+:warning::bangbang:**PS: please read P44 in the English version, P40 in Chinese version to get more.
+The note: Uninitialized objects of built-in type defined inside a function body have a undefined value. *Objects of class type that we do not explicitly inititalize have a value that is defined by class.* **:bangbang::warning:
 
 ## Exercise 2.11
 > Explain whether each of the following is a declaration or a
@@ -305,7 +305,7 @@ p1 = &b;
 
 ```
 
-## Exercise 2.19
+## :warning:Exercise 2.19:warning:
 >Explain the key differences between pointers and references.
 
 #### definition:
@@ -363,13 +363,13 @@ if (p) // whether p is nullptr?
 
 if (*p) // whether the value pointed by p is zero?
 
-## Exercise 2.23
+## :warning:Exercise 2.23:warning:
 >Given a pointer p, can you determine whether p points to a valid object? If so, how? If not, why not?
 
 No. Because more information needed to determine whether the pointer is valid or not.
 
 
-## Exercise 2.24
+## :warning:Exercise 2.24:warning:
 >Why is the initialization of p legal but that of lp illegal?
 
 ```cpp
